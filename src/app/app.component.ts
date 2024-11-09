@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormularioRegistroComponent } from './formulario-registro/formulario-registro.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [FormularioRegistroComponent],
+  template: `<app-formulario-registro></app-formulario-registro>`,
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'registro-incidentes';
-}
+export class AppComponent { }
